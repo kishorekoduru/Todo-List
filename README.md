@@ -74,6 +74,77 @@ The application works in all modern browsers:
 - Safari
 - Edge
 
+## Git Setup Template
+
+Follow these steps to set up a new project with Git and GitHub:
+
+### First-time Git Setup (if never done before)
+```bash
+# Set your global Git username
+git config --global user.name "Your Name"
+
+# Set your global Git email
+git config --global user.email "your.email@example.com"
+```
+
+### New Project Setup
+1. Create a new repository on GitHub
+   - Go to github.com
+   - Click "New repository"
+   - Name your repository
+   - Choose public/private
+   - Don't initialize with README if you have existing code
+
+2. Initialize local repository
+```bash
+# Navigate to your project directory
+cd your-project-directory
+
+# Initialize a new Git repository
+git init
+
+# Add all files to Git
+git add .
+
+# Create initial commit
+git commit -m "Initial commit: Project description"
+
+# Add GitHub repository as remote
+git remote add origin https://github.com/username/repository-name.git
+
+# Push to GitHub
+git push -u origin main
+```
+
+### Common Git Commands
+```bash
+# Check repository status
+git status
+
+# View commit history
+git log --oneline
+
+# Create and switch to new branch
+git checkout -b feature-name
+
+# Switch branches
+git checkout branch-name
+
+# Pull latest changes
+git pull origin main
+
+# Push changes
+git push origin branch-name
+```
+
+### Best Practices
+1. Create meaningful commit messages
+2. Create a new branch for each feature
+3. Pull latest changes before starting new work
+4. Review changes before committing
+5. Add appropriate .gitignore file
+6. Test code before pushing
+
 ## License
 
 This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).
